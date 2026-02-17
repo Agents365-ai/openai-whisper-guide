@@ -177,6 +177,34 @@ whisper audio.mp3 --model turbo --output_format srt
 mlx_whisper audio.mp3 --output-format srt
 ```
 
+### Subtitle Formatting (Whisper Native)
+
+Control line width and count for better readability:
+
+```bash
+# openai-whisper - recommended for professional subtitles
+whisper audio.mp3 --model turbo --output_format srt \
+  --max_line_width 42 \
+  --max_line_count 2
+
+# faster-whisper (Python)
+from faster_whisper import WhisperModel
+model = WhisperModel("turbo")
+segments, _ = model.transcribe(
+    "audio.mp3",
+    max_line_width=42,
+    max_line_count=2,
+)
+```
+
+| Parameter | Recommended | Description |
+|-----------|-------------|-------------|
+| `--max_line_width` | 42 | Max characters per line |
+| `--max_line_count` | 2 | Max lines per subtitle |
+| `--max_words_per_line` | 8 | Max words per line |
+
+> **Note:** For Netflix-quality subtitles (timing, reading speed, gaps), additional post-processing is needed beyond Whisper's native capabilities.
+
 ### Transcribe with Language Detection
 
 ```bash
