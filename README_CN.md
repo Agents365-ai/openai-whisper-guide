@@ -11,12 +11,15 @@
 
 ## 快速开始
 
+本技能适用于 [Claude Code](https://claude.ai/claude-code) 或 [Opencode](https://github.com/opencode-ai/opencode)。只需告诉 Claude：
+
+> "转录这个音频文件"
+
+或直接调用 `/openai-whisper`。
+
 ```bash
 # 检测你的环境
 python3 scripts/detect_env.py
-
-# 或在 Claude Code 中调用
-/openai-whisper
 ```
 
 ## 决策矩阵

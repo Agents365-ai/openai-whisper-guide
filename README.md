@@ -13,12 +13,15 @@ A Claude Code skill for automatic speech recognition using the optimal Whisper i
 
 ## Quick Start
 
+This skill is designed for use with [Claude Code](https://claude.ai/claude-code) or [Opencode](https://github.com/opencode-ai/opencode). Simply tell Claude:
+
+> "Transcribe this audio file"
+
+Or invoke directly with `/openai-whisper`.
+
 ```bash
 # Detect your environment
 python3 scripts/detect_env.py
-
-# Or invoke in Claude Code
-/openai-whisper
 ```
 
 ## Decision Matrix
