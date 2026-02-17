@@ -1,5 +1,7 @@
 # OpenAI Whisper Skill
 
+[中文文档](README_CN.md)
+
 A Claude Code skill for automatic speech recognition using the optimal Whisper implementation for your hardware.
 
 ## Features
@@ -51,3 +53,33 @@ openai-whisper/
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp)
 - [faster-whisper](https://github.com/SYSTRAN/faster-whisper)
 - [mlx-whisper](https://github.com/ml-explore/mlx-examples/tree/main/whisper)
+
+## License
+
+MIT
+
+## Support
+
+If this project helps you, consider supporting the author:
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/wechat-pay.png" width="180" alt="WeChat Pay">
+      <br>
+      <b>WeChat Pay</b>
+    </td>
+    <td align="center">
+      <img src="images/alipay.png" width="180" alt="Alipay">
+      <br>
+      <b>Alipay</b>
+    </td>
+  </tr>
+</table>
+
+## Author
+
+**探索未至之境**
+
+- Bilibili: https://space.bilibili.com/441831884
+- GitHub: https://github.com/niehu2018
